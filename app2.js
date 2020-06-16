@@ -89,7 +89,7 @@ inquirer
 
       const readMe = readMeFun();
 
-      fs.writeFile("team.html", readMe, (err) => {
+      fs.appendFile("./output/team.html", readMe, (err) => {
         if (err) throw err;
         console.log("The file has been saved!");
       });
